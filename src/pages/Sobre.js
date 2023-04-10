@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Button } from "react-native";
 
-const Sobre = () => {
+const Sobre = ({ navigation }) => {
     return (
         <View>
             <Text>Sobre mim</Text>
@@ -10,6 +10,11 @@ const Sobre = () => {
                 página para a web. Mas se pagar eu faço outros 
                 programas.
             </Text>
+
+            <Button 
+                title="Voltar"
+                onPress={ () => navigation.goBack() }
+            />
         </View>
     );
 }
