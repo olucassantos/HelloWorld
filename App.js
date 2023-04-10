@@ -1,26 +1,19 @@
 import { StyleSheet, Text, View } from 'react-native';
 
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+// Importa as página da aplicação
+import Home from './src/pages/Home';
+
+const Stack = createNativeStackNavigator();
+
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.titulo}>Olá Mundo</Text>
-
-      <Text>Meu nome é Lucas e este é meu primeiro APP em React!</Text>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={Home}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#CCC',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'start',
-  },
-  titulo: {
-    backgroundColor: "#FF69B4",
-    padding: 10,
-    borderRadius: 5
-  }
-});

@@ -14,4 +14,6 @@ Para instalar os pacotes, basta rodar o comando:
 
     npm install @react-navigation/native-stack
 
+## 2. Configuração do App.js
 
+O arquivo App.js é o arquivo principal da aplicação, onde é feito a configuração do react navigation.
