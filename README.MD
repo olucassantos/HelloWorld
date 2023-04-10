@@ -11,3 +11,7 @@ Para utilizar o react navigation precisamos de alguns pacotes:
 Para instalar os pacotes, basta rodar o comando:
 
     npm install @react-navigation/native react-native-screens react-native-safe-area-context
+
+    npm install @react-navigation/native-stack
+
+
